@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { setGifs } from '../actions'
 
 
-import Gif from './gif'
+import Gif from '../containers/gif'
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
@@ -22,7 +22,7 @@ function mapReduxStateToProps(reduxState) {
 
 class Gif_list extends Component {
   renderList = () => {
-    return this.props.gifs.map( gif => <Gif id= { gif.id } key= { gif.id }/>)
+    return this.props.gifs.map( gif => <Gif id= { gif.id } key= { gif.id } gif= { gif }/>)
   }
 
   componentDidMount() {

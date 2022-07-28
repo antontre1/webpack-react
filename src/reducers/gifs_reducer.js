@@ -8,6 +8,8 @@ export default function(state, action) {
   switch(action.type) {
     case 'SET_GIFS':
       return action.payload
+    case 'SELECT_GIF':
+      return action.payload
     default:
       return state
   }

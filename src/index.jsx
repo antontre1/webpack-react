@@ -7,8 +7,10 @@ import { createStore, combineReducers } from 'redux'
 import '../assets/stylesheets/app.scss'
 
 import gifsReducer from './reducers/gifs_reducer'
+import selectedGifReducer from './reducers/selected_gif_reducer'
 const reducers = combineReducers( {
-  gifs: gifsReducer
+  gifs: gifsReducer,
+  selectedGif: selectedGifReducer
 })
 
 import App from './components/app.jsx'

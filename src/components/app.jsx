@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Gif from './gif'
+import Gif from '../containers/gif.jsx'
 import Gif_list from './gif_list'
 import giphy from 'giphy-api'
 
