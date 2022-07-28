@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import SearchBar from './search_bar'
 import Gif from './gif'
 import Gif_list from './gif_list'
 import giphy from 'giphy-api'
@@ -30,14 +29,9 @@ class App extends Component {
   }
 
   render() {
-    const gifs = [
-      { id: "8jnAVuSyXGJwIqu1YX"},
-      { id: "01gDkGLky1E5mPDo7N"}
-    ]
     return (
     <div>
       <div className="left-scene">
-        <SearchBar searchFunction = {this.search}/>
         <div className="selected-gif">
           <Gif id={this.state.selectedGifId}/>
         </div>
