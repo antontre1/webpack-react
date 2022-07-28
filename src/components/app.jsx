@@ -30,10 +30,6 @@ class App extends Component {
   }
 
   render() {
-    const gifs = [
-      { id: "8jnAVuSyXGJwIqu1YX"},
-      { id: "01gDkGLky1E5mPDo7N"}
-    ]
     return (
     <div>
       <div className="left-scene">
